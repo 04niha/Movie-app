@@ -105,7 +105,7 @@
                     <li>
                         <a
                             class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-                            href="/movies"
+                            href="movies"
                             @click="selected = (selected === 'Movies' ? '':'Movies')"
                             :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Movies') }"
                         >
@@ -130,7 +130,7 @@
                     <li>
                         <a
                             class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-                            href="/genres"
+                            href="genres"
                             @click="selected = (selected === 'Genres' ? '':'Genres')"
                             :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Genres') }"
                         >
@@ -155,7 +155,7 @@
                     <li>
                         <a
                             class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-                            href="#"
+                            href="reviews"
                             @click="selected = (selected === 'Reviews' ? '':'Reviews')"
                             :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Reviews') }"
                         >
@@ -168,7 +168,7 @@
                                 </g>
                                 <defs>
                                     <clipPath id="clip0_130_9756">
-                                        <rect width="18" height="18" fill="white" transform="translate(0 0.052124)" />
+                                        <rect width="15" height="15" fill="white" transform="translate(0 0.052124)" />
                                     </clipPath>
                                 </defs>
                             </svg>
