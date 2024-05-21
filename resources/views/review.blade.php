@@ -39,23 +39,24 @@
                     </div>
                     <div class="col-span-1 flex items-center">
                         <p class="font-medium">Date</p>
-</div>
-                    
+                     </div>
+
                 </div>
 
+                @foreach ($reviews as $review)
                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                     <div class="col-span-3 flex items-center">
                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                             <div class="w-12 rounded-md">
                             <div class="col-span-1 items-center ">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            1
+                        {{ $review['id'] }}
                         </p>
                     </div>
                     
                             </div>
                     <p class="text-sm font-medium text-black dark:text-white">
-                                Jojo Bizarre Adventure
+                    {{ $review['title'] }}
                             </p>
                                 
                             
@@ -63,17 +64,17 @@
                         </div>
                         <div class="col-span-2 items-center sm:flex">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            nehasmanjas@gmail.com
+                        {{ $review['user'] }}
                         </p>
                     </div>
                     <div class="col-span-1 items-center sm:flex">
                         <p class="text-sm font-medium text-black dark:text-white">
-                             5
+                        {{ $review['rating'] }}
                         </p>
                     </div>
                     <div class="col-span-2 flex items-center">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            17 april 2024
+                        {{ $review['date'] }}
                         </p>
                     </div>
                     <div class="col-span-1 flex items-center">
@@ -83,172 +84,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-3 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                            <div class="col-span-1 items-center ">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            2
-                        </p>
-                    </div>
-                    
-                            </div>
-                    <p class="text-sm font-medium text-black dark:text-white">
-                                Noragami
-                            </p>
-                                
-                            
-                        </div>
-                        </div>
-                        <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            nehasmanjas@gmail.com
-                        </p>
-                    </div>
-                    <div class="col-span-1 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                             4
-                        </p>
-                    </div>
-                    <div class="col-span-2 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            19 april 2024
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href="" class=""></a>
-                            <a href="" class=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-3 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                            <div class="col-span-1 items-center ">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            3
-                        </p>
-                    </div>
-                    
-                            </div>
-                    <p class="text-sm font-medium text-black dark:text-white">
-                                Wind breaker
-                            </p>
-                                
-                            
-                        </div>
-                        </div>
-                        <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            nehasmanjas@gmail.com
-                        </p>
-                    </div>
-                    <div class="col-span-1 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                             5
-                        </p>
-                    </div>
-                    <div class="col-span-2 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            21 april 2024
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href="" class=""></a>
-                            <a href="" class=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-3 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                            <div class="col-span-1 items-center ">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            4
-                        </p>
-                    </div>
-                    
-                            </div>
-                    <p class="text-sm font-medium text-black dark:text-white">
-                                one piece
-                            </p>
-                                
-                            
-                        </div>
-                        </div>
-                        <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            nehasmanjas@gmail.com
-                        </p>
-                    </div>
-                    <div class="col-span-1 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                             5
-                        </p>
-                    </div>
-                    <div class="col-span-2 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            25 april 2024
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href="" class=""></a>
-                            <a href="" class=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                    <div class="col-span-3 flex items-center">
-                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                            <div class="w-12 rounded-md">
-                            <div class="col-span-1 items-center ">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            5
-                        </p>
-                    </div>
-                    
-                            </div>
-                    <p class="text-sm font-medium text-black dark:text-white">
-                                Naruto
-                            </p>
-                                
-                            
-                        </div>
-                        </div>
-                        <div class="col-span-2 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            nehasmanjas@gmail.com
-                        </p>
-                    </div>
-                    <div class="col-span-1 items-center sm:flex">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                             4
-                        </p>
-                    </div>
-                    <div class="col-span-2 flex items-center">
-                        <p class="text-sm font-medium text-black dark:text-white">
-                            30 april 2024
-                        </p>
-                    </div>
-                    <div class="col-span-1 flex items-center">
-                        <div class="flex items-center space-x-1">
-                            <a href="" class=""></a>
-                            <a href="" class=""></a>
-                        </div>
-                    </div>
-                </div>
-               
-                        </div>
-                    </div>
+                @endforeach
                 </div>
             </div>
-
+            
             <!-- ====== Table Two End -->
         </div>
         <!-- ====== Table Section End -->
