@@ -15,44 +15,28 @@ class ReviewSeeder extends Seeder
     {
         Review::create([
             'id' => 1,
-            'movie_id' =>'1',
-            'user' =>'nehasmanjas@gmail.com',
-            'rating' => '5',
-            'date' => '17 april 2024',
+            'movie_id' => '1',
+            'user' =>'@Nihayatul _janiah',
+            'rating' => '3/5',
+            'date' => '30 Desember 2024', 
         ]);
     
         Review::create([
             'id' => 2,
-            'movie_id' =>'2',
-            'user' =>'nehasmanjas@gmail.com',
-            'rating' => '4',
-            'date' => '19 april 2024',  
+            'movie_id' => '2',
+            'user' =>'@Nihayatul_janiah',
+            'rating' => '3,5/5',
+            'date' => '10 April 2024',   
         ]);
     
         Review::create([
             'id' => 3,
-            'movie_id' =>'3',
-            'user' =>'nehasmanjas@gmail.com',
-            'rating' => '5',
-        ]);
-        
-        Review::create([     
-            'id' => 4,
-            'movie_id' =>'1',
-            'user' =>'nehasmanjas@gmail.com',
-            'rating' => '5',
-            'date' => '25 april 2024',   
+            'movie_id' => '3',
+            'user' =>'@Nihayatul_janiah',
+            'rating' => '4/5',
+            'date' => '1 Jun 2024',   
         ]);
     
-        Review::create([
-            'id' => 5,
-            'movie_id' =>'2',
-            'user' =>'nehasmanjas@gmail.com',
-            'rating' => '4',
-            'date' => '30 april 2024', 
-        ]);
-        
-            
        
     }
 }

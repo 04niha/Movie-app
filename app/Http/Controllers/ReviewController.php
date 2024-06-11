@@ -3,40 +3,60 @@
 namespace App\Http\Controllers;
 
 use App\Models\Review;
-
 use Illuminate\Http\Request;
 
 class ReviewController extends Controller
 {
     public function index()
-{
-    $reviews = Review::all();
-    
+    {
+        $reviews = Review::all();
+
         return view('reviews.index', compact('reviews'));
-}
+    }
+
     public function create()
-{
-    $reviews = Review::all();
-    return view('reviews.create', compact('reviews'));
-}
+    {
+        $reviews = Review::all();
+        return view('reviews.create', compact('reviews'));
+    }
+
     public function store(Request $request)
+    {
+        $validatedData = $request->validate([
+            'movie_id' => 'required',
+            'user' => 'required',
+            'rating' => 'required',
+            'date' => 'required',
+        ]);
+
+        Review::create($validatedData);
+
+        return redirect('/reviews')->with('success', 'Review added successfully!');
+    }
+
+    public function edit(Review $review)
+    {
+        $reviews = Review::all();
+        return view('reviews.edit', compact('review', 'reviews'));
+    }
+    public function update(Request $request, Review $review)
 {
     $validatedData = $request->validate([
-        
-        'id' => 'required',
-        'movie' => 'required',
-        'user' => 'required',
-        'rating' => 'required',
-        'date' => 'required',
+            'movie_id' => 'required',
+            'user' => 'required',
+            'rating' => 'required',
+            'date' => 'required',   
     ]);
 
-    Review::create($validatedData);
+    $review->update($validatedData);
 
-    return redirect('/reviews')->with('success', 'review added successfully!');
+    return redirect('/reviews')->with('success', 'Review updated successfully!');
 }
-public function destroy(Review $review)
-{
+
+    public function destroy(Review $review)
+    {
         $review->delete();
-        return redirect('/reviews')->with('success', 'Genre deleted successfully!');
+        return redirect('/reviews')->with('success', 'Review deleted successfully!');
     }
+
 }

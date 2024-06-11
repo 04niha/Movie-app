@@ -18,10 +18,8 @@
                 </a>
             </nav>
         </div>
-
-
-
-         @if (session('success'))
+        <!-- Breadcrumb End -->
+        @if (session('success'))
                         <div
                             class="flex w-full border-l-6 border-[#34D399] bg-[#34D399] bg-opacity-[15%] my-4 px-7 py-6 shadow-md dark:bg-[#1B1B24] dark:bg-opacity-30"
                         >
@@ -51,7 +49,6 @@
                             </div>
                         </div>
                         @endif
-        <!-- Breadcrumb End -->
 
         <!-- ====== Table Section Start -->
         <div class="flex flex-col gap-10">
@@ -90,7 +87,7 @@
                                 </div>
                             </div>
                             <p class="text-sm font-medium text-black dark:text-white">
-                                {{ $review->movie->title }}
+                                {{ $review->movie->title}}
                             </p>    
                         </div>
                     </div>
